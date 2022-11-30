@@ -5,4 +5,4 @@ class SearchBox extends Component{
 
 }
 
-export default SearchBox
+export default SearchBoxg
