@@ -2,6 +2,8 @@
 import './App.css';
 import { Component } from 'react';
 import CardList from './components/card-list/card-list.component';
+import TestComponent from './components/test/test.component';
+import ListComponent from './components/test/list.component';
 class  App extends Component {
   
   constructor() {
@@ -50,9 +52,9 @@ onSearchChange = (event) =>{
 
     return (
       <div className="App">
-      <input className='search-box' type='search' placeholder='search monsters' onChange={onSearchChange}
+      {/* <input className='search-box' type='search' placeholder='search monsters' onChange={onSearchChange}
 
-      />
+      /> */}
       {/* {monsterArr.map((monster)=>{
         return (
           <div key={monster.id}>
@@ -60,7 +62,10 @@ onSearchChange = (event) =>{
           </div>
         )
       })} */}
-      <CardList />
+     
+
+      <TestComponent/>
+      <ListComponent />
       </div>
     );
   }
